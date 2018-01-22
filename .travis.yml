@@ -6,15 +6,11 @@ python:
 sudo: false
 
 install:
- - pip install pyflakes pycodestyle
+ - pip install flake8
 
 script:
  # Run tests
  - tests/run_tests.sh
-
- # Static analysis
- - pyflakes .
- - pycodestyle --statistics --count .
 
 matrix:
   fast_finish: true

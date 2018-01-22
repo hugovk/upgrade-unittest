@@ -4,10 +4,10 @@ import unittest
 class TestStuff(unittest.TestCase):
 
     def test_contains(self):
-        self.assertIn(1, [1, 2])
-        self.assertNotIn(9, [1, 2])
-        self.assertNotIn(9, [1, 2])
-        self.assertIn(1, [1, 2])
+        self.assertTrue(1 in [1, 2])
+        self.assertFalse(9 in [1, 2])
+        self.assertTrue(9 not in [1, 2])
+        self.assertFalse(1 not in [1, 2])
 
     def test_comparison(self):
         self.assertGreater(9, 1)

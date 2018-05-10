@@ -4,6 +4,10 @@
 #
 # Usage: upgrade-unittest.sh test.py
 #
+# Note: macOS needs gnu-sed:
+#
+#   $ brew install gnu-sed --with-default-names
+#
 # Note: doesn't work on multiline test
 #
 # https://docs.python.org/2/library/unittest.html#assert-methods
@@ -100,6 +104,11 @@ do
 
   old='self\.assertFalse(\(.*\) != \(.*\))'
   new='self.assertEqual(\1, \2)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertTrue(\(.*\) is not None)'
+  new='self.assertIsNotNone(\1)'
 
   sed -i "s/$old/$new/g" "$filename"
 

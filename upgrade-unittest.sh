@@ -112,4 +112,19 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertTrue(\(.*\) is None)'
+  new='self.assertIsNone(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertFalse(\(.*\) is None)'
+  new='self.assertIsNotNone(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertFalse(\(.*\) is not None)'
+  new='self.assertIsNone(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

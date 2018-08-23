@@ -132,4 +132,9 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertNotEqual(\(.*\), None)'
+  new='self.assertIsNotNone(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

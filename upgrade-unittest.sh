@@ -127,4 +127,9 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertEqual(\(.*\), False)'
+  new='self.assertFalse(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

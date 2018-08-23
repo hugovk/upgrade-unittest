@@ -40,6 +40,7 @@ class TestStuff(unittest.TestCase):
         self.assertTrue(None is None)
         self.assertFalse(1 is None)
         self.assertFalse(None is not None)
+        self.assertEqual(False, False)
 
 
 if __name__ == "__main__":

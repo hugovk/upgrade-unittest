@@ -5,7 +5,7 @@ set -e
 # Before
 cp tests/tests_example.py tests/tests_example.py.bak
 python tests/tests_example.py
-flake8 tests/tests_example.py
+flake8 tests/tests_example.py --ignore=A
 
 # Act
 ./upgrade-unittest.sh tests/tests_example.py

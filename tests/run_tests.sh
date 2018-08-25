@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -v
 
 # Before
 cp tests/tests_example.py tests/tests_example.py.bak

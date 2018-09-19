@@ -137,4 +137,9 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertTrue(isinstance(\(.*\), \(.*\)))'
+  new='self.assertIsInstance(\1, \2)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

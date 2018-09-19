@@ -42,6 +42,7 @@ class TestStuff(unittest.TestCase):
         self.assertIsNone(None)
         self.assertFalse(False)
         self.assertIsNotNone(1)
+        self.assertIsInstance(1, int)
 
 
 if __name__ == "__main__":

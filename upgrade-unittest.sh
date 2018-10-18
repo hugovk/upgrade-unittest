@@ -92,6 +92,11 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertEqual(None, \(.*\))'
+  new='self.assertIsNone(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
   old='self\.assertTrue(\(.*\) == \(.*\))'
   new='self.assertEqual(\1, \2)'
 

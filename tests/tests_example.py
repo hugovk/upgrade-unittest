@@ -3,6 +3,7 @@ import unittest
 
 true_value = True
 false_value = False
+none_value = None
 
 
 class TestStuff(unittest.TestCase):
@@ -50,6 +51,7 @@ class TestStuff(unittest.TestCase):
         self.assertEqual(True, true_value)
         self.assertTrue(false_value is not true_value)
         self.assertTrue(false_value is False)
+        self.assertEqual(None, none_value)
 
 
 if __name__ == "__main__":

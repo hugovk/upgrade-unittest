@@ -152,4 +152,9 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.assertTrue(\(.*\) is \(.*\))'
+  new='self.assertIs(\1, \2)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

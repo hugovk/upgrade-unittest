@@ -2,6 +2,7 @@ import unittest
 
 
 true_value = True
+false_value = False
 
 
 class TestStuff(unittest.TestCase):
@@ -47,6 +48,7 @@ class TestStuff(unittest.TestCase):
         self.assertTrue(isinstance(1, int))
         self.assertEqual(true_value, True)
         self.assertEqual(True, true_value)
+        self.assertTrue(false_value is False)
 
 
 if __name__ == "__main__":

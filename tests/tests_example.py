@@ -48,6 +48,7 @@ class TestStuff(unittest.TestCase):
         self.assertTrue(isinstance(1, int))
         self.assertEqual(true_value, True)
         self.assertEqual(True, true_value)
+        self.assertTrue(false_value is not true_value)
         self.assertTrue(false_value is False)
 
 

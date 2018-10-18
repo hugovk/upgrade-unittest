@@ -48,6 +48,7 @@ class TestStuff(unittest.TestCase):
         self.assertIsInstance(1, int)
         self.assertTrue(true_value)
         self.assertTrue(true_value)
+        self.assertIsNot(false_value, true_value)
         self.assertIs(false_value, False)
 
 

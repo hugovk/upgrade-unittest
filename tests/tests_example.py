@@ -1,8 +1,10 @@
 import unittest
 
 
-class TestStuff(unittest.TestCase):
+true_value = True
 
+
+class TestStuff(unittest.TestCase):
     def test_contains(self):
         self.assertTrue(1 in [1, 2])
         self.assertFalse(9 in [1, 2])
@@ -43,7 +45,8 @@ class TestStuff(unittest.TestCase):
         self.assertEqual(False, False)
         self.assertNotEqual(1, None)
         self.assertTrue(isinstance(1, int))
-        self.assertEqual(True, True)
+        self.assertEqual(true_value, True)
+        self.assertEqual(True, true_value)
 
 
 if __name__ == "__main__":

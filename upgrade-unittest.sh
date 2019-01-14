@@ -6,7 +6,8 @@
 #
 # Note: macOS needs gnu-sed:
 #
-#   $ brew install gnu-sed --with-default-names
+#   $ brew install gnu-sed
+#   $ PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 #
 # Note: doesn't work on multiline test
 #

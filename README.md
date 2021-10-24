@@ -1,6 +1,6 @@
 # upgrade-unittest
 
-[![Build Status](https://travis-ci.org/hugovk/upgrade-unittest.svg?branch=master)](https://travis-ci.org/hugovk/upgrade-unittest)
+[![Test](https://github.com/hugovk/upgrade-unittest/actions/workflows/test.yml/badge.svg)](https://github.com/hugovk/upgrade-unittest/actions/workflows/test.yml)
 
 Script to upgrade some Python unittest assert methods to be more useful.
 

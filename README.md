@@ -14,3 +14,7 @@ upgrade-unittest.sh *.py
 
 upgrade-unittest.sh `find . -name "*.py"`
 ```
+
+## See also
+
+* https://github.com/isidentical/teyit

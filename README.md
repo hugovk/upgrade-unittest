@@ -18,3 +18,4 @@ upgrade-unittest.sh `find . -name "*.py"`
 ## See also
 
 * https://github.com/isidentical/teyit
+* https://github.com/jparise/flake8-assertive

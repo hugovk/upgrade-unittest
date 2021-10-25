@@ -11,7 +11,7 @@
 #
 # Note: doesn't work on multiline test
 #
-# https://docs.python.org/2/library/unittest.html#assert-methods
+# https://docs.python.org/3/library/unittest.html#assert-methods
 
 for filename in $*
 do

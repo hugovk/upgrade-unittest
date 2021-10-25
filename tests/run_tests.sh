@@ -5,7 +5,7 @@ set -v
 
 # Before
 cp tests/tests_example.py tests/tests_example.py.bak
-python tests/tests_example.py
+python3 tests/tests_example.py
 flake8 tests/tests_example.py --ignore=A
 
 # Act
@@ -13,7 +13,7 @@ flake8 tests/tests_example.py --ignore=A
 diff tests/tests_example.py tests/tests_expected.py
 
 # After
-python tests/tests_example.py
+python3 tests/tests_example.py
 flake8 tests/tests_example.py
 
 # Reset

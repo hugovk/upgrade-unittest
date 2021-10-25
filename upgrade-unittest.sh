@@ -173,4 +173,24 @@ do
 
   sed -i "s/$old/$new/g" "$filename"
 
+  old='self\.failUnlessRaises(\(.*\))'
+  new='self.assertRaises(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertRaisesRegexp(\(.*\))'
+  new='self.assertRaisesRegex(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertRegexpMatches(\(.*\))'
+  new='self.assertRegex(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
+  old='self\.assertNotRegexpMatches(\(.*\))'
+  new='self.assertNotRegex(\1)'
+
+  sed -i "s/$old/$new/g" "$filename"
+
 done

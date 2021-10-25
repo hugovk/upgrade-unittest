@@ -54,6 +54,18 @@ class TestStuff(unittest.TestCase):
         self.assertIsNot(false_value, true_value)
         self.assertIs(false_value, False)
 
+    def test_raises(self):
+        # https://docs.python.org/3.10/library/unittest.html#deprecated-aliases
+        with self.assertRaises(TypeError):
+            int('XYZ')
+        with self.assertRaisesRegex(TypeError, 'literal'):
+            int('XYZ')
+
+    def test_regex(self):
+        # https://docs.python.org/3.10/library/unittest.html#deprecated-aliases
+        self.assertRegex("abcde", "bcd")
+        self.assertNotRegex("abcde", "xyz")
+
 
 if __name__ == "__main__":
     unittest.main()
